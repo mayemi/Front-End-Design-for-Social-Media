@@ -1,0 +1,209 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(62, 92, 64, 0.418);
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(50, 70, 60);
+    color: azure;
+    height: 50px;
+    padding: 10px;
+}
+.bar a{
+    color: azure;
+    text-decoration: none;
+}
+.bar .usttaraf{
+    cursor: pointer;
+}
+.bar .usttaraf:hover{
+    color: rgb(50, 70, 60);
+    background: white;
+    padding: 25px 10px 25px 10px;
+    transition: background-color 0.3s, padding 0.3s;
+    border-radius: 3px;
+    font-size: 25px;
+    transition: font-size 0.275s;
+}
+.bar .Ara{
+    height: 50%;
+    width: 230px;
+    border: 2px solid rgb(50, 70, 60);
+    border-radius: 15px;
+    font-size: 17px;
+    font-weight: 450;
+    font-style: italic;
+    padding: 4px 10px;
+}
+
+.bar .giriskayit a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.bar .giriskayit button{
+    color: azure;
+    margin: 0px 10px 0px 5px;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 115%;
+    height: 250%;
+    cursor: pointer;
+    border: 1px solid azure;
+    border-radius: 14px;
+}
+.giris:hover{
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+    transition: font-size 0.3s;
+}
+.kayit:hover{
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+    transition: font-size 0.3s;
+}
+.sayfa{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.sayfa .konular{
+    background: rgb(50, 70, 60);
+    color: azure;
+    width: 18%;
+    border-radius: 8px;
+}
+.sayfa .konular h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.sayfa .konular a{
+    text-decoration: none;
+    color: azure;
+}
+.sayfa .konular .konu{
+    padding: 25px 50px;
+    font-weight: 600;
+}
+.sayfa .konular .konu p{
+    font-weight: 200;
+}
+.sayfa .konular .konu:hover{
+    border: 2px solid azure;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: font-size 0.29s;
+}
+.sayfa .yazilar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(50, 70, 60);
+    color: azure;
+    width: 950px;
+    border-radius: 8px;
+    align-items: center;
+}
+.sayfa .yazilar .paylasim{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px 0;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+    border: 2px solid azure;
+    border-radius: 20px;
+}
+.sayfa .yazilar .paylasim h2{
+    padding-bottom: 16px;
+}
+.sayfa .yazilar .etkilesim{
+    display: flex;
+    margin-left: 80%;
+    margin-top: 8px;
+    font-size: 20px;
+}
+#like:hover {
+    color: rgb(50, 70, 60);
+    background: azure;
+    line-height: 1; 
+    padding: 0;
+    cursor: pointer;
+}
+#share:hover {
+    color: rgb(50, 70, 60);
+    background: azure;
+    line-height: 1; 
+    padding: 0;
+    cursor: pointer;
+}
+#save:hover {
+    color: rgb(50, 70, 60);
+    background: azure;
+    line-height: 1; 
+    padding: 0;
+    cursor: pointer;
+}
+.sayfa .yazilar .paylasim:hover{
+    font-size: 17px;
+    transition: font-size 0.3s;
+}
+.sayfa .kart i{
+    display: none;
+}
+.sayfa .kart{
+    display: flex;
+    flex-direction: column;
+    background: rgb(50, 70, 60);
+    color: azure;
+    border-radius: 8px;
+    align-items: center;
+    padding: 10px 12px 0;
+    max-width: 20%;
+    min-width: 20%;
+}
+.sayfa .kart .kartisim{
+    font-weight: 600;
+    margin-top: 12px;
+}
+.sayfa .kart .takiptakipci p{
+    font-weight: 480;
+    margin: 12px 0;
+}
+.sayfa .kart img{
+    display: none;
+    height: 150px;
+    width: 150px;
+    border: 2px solid azure;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out
+}
+.sayfa .kart img:hover{
+    transform: scale(1.06);
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.fade-in{
+    animation: fadeIn 0.7s ease-in-out;
+}
