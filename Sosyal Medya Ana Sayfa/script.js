@@ -51,3 +51,20 @@ document.querySelectorAll('.paylasim').forEach(post =>{
         profileCard.classList.add('fade-in')
     });
 });
+
+document.querySelectorAll('.paylasim').forEach(post2 =>{
+    post2.addEventListener('click',function(){
+        const openCard = document.querySelector('.bigger-card');
+        if (openCard && openCard !== this){
+            openCard.classList.remove("bigger-card");
+        }
+        this.classList.toggle('bigger-card');
+    });
+});
+
+document.addEventListener('click',function(event){
+    const openCard = document.querySelector('.bigger-card');
+    if (openCard && !openCard.contains(event.target)){
+        openCard.classList.remove('bigger-card');
+    }
+});
