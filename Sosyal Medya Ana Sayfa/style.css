@@ -127,6 +127,15 @@ body{
     padding-left: 10px;
     border: 2px solid azure;
     border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.bigger-card{
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+.sayfa .yazilar .paylasim .buyuk{
+    transform: (1.2x);
 }
 .sayfa .yazilar .paylasim h2{
     padding-bottom: 16px;
